@@ -1,0 +1,18 @@
+[build]
+dist = "docs"
+
+
+[[hooks]]
+stage = "post_build"
+command = "sh"
+command_arguments = ["-c", "npx tailwindcss -i ./styles/tailwind.css -o ./dist/.stage/index.css"]
+
+
+[serve]
+address = "127.0.0.1"
+port = 7878
+
+[[proxy]]
+rewrite = "/api/"
+backend = "http://127.0.0.1:3000/"
+

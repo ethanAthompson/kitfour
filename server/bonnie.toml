@@ -1,0 +1,7 @@
+version="0.3.2"
+
+[scripts]
+
+# hot releading !!!
+axum = "cargo watch -q -c -w src/ -x run"
+wasa = "cargo watch -q -c -w tests/ -x 'test -q client -- --nocapture'"
