@@ -1,5 +1,5 @@
 <div align="center">
-    <h1>Kitfour</h1>h
+    <h1>Kitfour</h1>
     <h5>An implementation of Htmx + Yew + Tailiwind CSS </h5>
 </div>
 
