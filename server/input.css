@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  body {
+    @apply dark:bg-slate-800 bg-slate-500 text-black dark:text-white;
+  }
+}
+
+@layer components {
+
+  .cardsize {
+    @apply max-w-md md:max-w-2xl;
+  }
+
+  .cardcolor {
+    @apply bg-slate-800;
+  }
+
+  .card {
+    @apply cardsize rounded overflow-hidden shadow-lg cardcolor;
+  }
+
+  .cardhidden {
+    @apply card hidden;
+  }
+
+  .cardextra {
+    @apply px-6 py-4;
+
+  }
+
+  .carditem {
+    @apply
+    /**/
+    inline-block bg-slate-400 dark:bg-green-300 rounded-full px-2 py-1 text-sm
+    /**/
+    font-semibold text-gray-700 mr-2 mb-2
+    /**/
+    hover:text-white hover:bg-gray-800;
+  }
+
+  .cardtext {
+    @apply text-gray-200 text-base;
+  }
+
+  .centerdiv {
+    @apply justify-center items-center flex p-2;
+  }
+
+  .centerdiv2 {
+    @apply py-4 px-4 sm:flex block items-center justify-center;
+  }
+
+  .btn {
+    @apply p-4 rounded-lg m-4;
+  }
+
+  .navgradient {
+    @apply bg-gradient-to-r from-slate-700 to-slate-800;
+  }
+
+  .nav {
+    @apply p-2 navgradient centerdiv w-full gap-8 hidden sm:flex;
+  }
+
+  .footer {
+    @apply navgradient left-0 bottom-0 w-full fixed justify-center items-center hidden sm:flex py-2;
+  }
+
+  .title {
+    @apply text-xl sm:text-2xl md:text-4xl;
+  }
+
+  .logo {
+    @apply w-12 h-12 rounded-lg;
+  }
+
+  .dropdown {
+    @apply text-black;
+  }
+
+  .store {
+    @apply px-6 pt-4 pb-2;
+  }
+
+  .orphan123 {
+    @apply hover:text-gray-400;
+  }
+
+  .gap {
+    @apply p-8 m-6;
+  }
+
+  .cat_image {
+    @apply w-auto object-contain h-auto;
+  }
+
+}

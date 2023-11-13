@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kitfour-Backend</title>
+  <link href="output.css" rel="stylesheet" />
+
+  <script data-trunk="true" src="https://unpkg.com/htmx.org@1.9.4"></script>
+</head>
+
+<body class="bg-slate-800">
+
+  <nav class="nav">
+    <h1 class="title">Kit Four Backend</h1>
+  </nav>
+
+  <div class="centerdiv">
+    <main class="card justify-center">
+      <label class="py-4 items-center justify-center flex"> Here is a taste of the actual frontent </label />
+      <article class="centerdiv2">
+        <div class="cardextra justify-center items-center">
+          <button class="carditem" hx-target="#box" hx-get="catfacts/eng-us">English Cat Facts</button>
+          <button class="carditem" hx-target="#box" hx-get="catfacts/ces-cz">Czech Cat Facts</button>
+          <button class="carditem" hx-target="#box" hx-get="catfacts/ger-de">Germen Cat Facts</button>
+          <button class="carditem" hx-target="#box" hx-get="catfacts/ben-in">Bengali Cat Facts</button>
+          <button class="carditem" hx-target="#box" hx-get="catfacts/esp-es">Spanish ES Cat Facts</button>
+          <button class="carditem" hx-target="#box" hx-get="catfacts/esp-mx">Spanish MX Cat Facts</button>
+          <button class="carditem" hx-target="#box" hx-get="catfacts/rus-ru">Russian Cat Facts</button>
+          <button class="carditem" hx-target="#box" hx-get="catfacts/por-br">Portuguese Cat Facts</button>
+        </div>
+      </article>
+    </main>
+  </div>
+
+
+  <div class="centerdiv min-w-4xl">
+    <p id="box" class="p-4 m-4"></p>
+  </div>
+  <footer class="footer p-1">
+    <p class="title">Built with Rust Axum + Tailwind CSS</p>
+  </footer>
+
+</body>
+
+</html>

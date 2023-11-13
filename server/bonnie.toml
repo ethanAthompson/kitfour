@@ -4,4 +4,5 @@ version="0.3.2"
 
 # hot releading !!!
 axum = "cargo watch -q -c -w src/ -x run"
-wasa = "cargo watch -q -c -w tests/ -x 'test -q client -- --nocapture'"
+test = "cargo watch -q -c -w tests/ -x 'test -q client -- --nocapture'"
+css = "npx tailwindcss -i ./input.css -o ./public/output.css --watch"
