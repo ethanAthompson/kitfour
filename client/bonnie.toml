@@ -1,4 +1,4 @@
 version="0.3.2"
 
 [scripts]
-build = "trunk build --release --public-url kitfour/"
+build = "trunk build --release --public-url kitfour/ && cp -r docs .."

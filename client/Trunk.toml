@@ -14,5 +14,7 @@ port = 7878
 
 [[proxy]]
 rewrite = "/api/"
+
+# Change to url of render server for production
 backend = "http://127.0.0.1:3000/"
 
