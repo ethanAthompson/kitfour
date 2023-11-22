@@ -7,7 +7,7 @@
 [My First Yew App](https://github.com/wpcodevo/rust-yew-app/tree/master)
 
 <div align="center">
-    <h1>What's needed to run: Trunk, Cargo, Wasm-Bindgen, maybe a kitten</h1>
+    <h3>What's needed to run: Trunk, Cargo, Wasm-Bindgen, maybe a kitten</h3>
     <h5>Trunk serve in client folder</h5>
     <h5>Cargo run in server folder</h5>
 </div>
